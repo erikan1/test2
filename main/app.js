@@ -9,7 +9,6 @@ import {
 import { Style } from "./styles";
 import { Header } from "./header"
 import { Container } from "./container"
-import { MainView } from "./mainView"
 require('./images/red-o.png');
 require('./images/red-x.png');
 
@@ -66,7 +65,7 @@ class Game extends Component {
     if (sum == 3) {return 1;}
     else if (sum == -3) {return -1; };
 
-    sum = arr[2][0] + arr[1][i] + arr[0][2];
+    sum = arr[2][0] + arr[1][0] + arr[0][2];
     if (sum == 3) {return 1;}
     else if (sum == -3) {return -1; };
 
